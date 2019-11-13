@@ -36,7 +36,8 @@ dsconfig set-store-adapter-prop \
     --adapter-name UserStoreAdapter \
     --set enabled:true \
     --set structural-ldap-objectclass:inetOrgPerson \
-    --set include-base-dn:ou=people,${USER_BASE_DN} \
+    #--set include-base-dn:ou=people,${USER_BASE_DN} \
+    --set include-base-dn:ou=people,o=anyhealth.org \
     --set create-dn-pattern:entryUUID=server-generated,ou=people,${USER_BASE_DN} \
     --set load-balancing-algorithm:user-store-lba
 
