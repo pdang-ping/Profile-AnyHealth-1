@@ -7,7 +7,8 @@ dsconfig create-external-server \
     --set server-port:636 \
     --type ping-identity-ds \
     --set "bind-dn:cn=pingdatagovernance,cn=Root DNs,cn=config" \
-    --set password<${ROOT_USER_PASSWORD_FILE} \
+    #--set password<${ROOT_USER_PASSWORD_FILE} \
+    --set password:2FederateM0re \
     --set authorization-method:none \
     --set location:Docker \
     --set connection-security:ssl \
